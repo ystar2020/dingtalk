@@ -1,4 +1,4 @@
-module github.com/CatchZeng/dingtalk
+module github.com/ystar2020/dingtalk
 
 go 1.13
 

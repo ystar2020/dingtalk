@@ -1,6 +1,6 @@
 # dingtalk
 
-[English](https://github.com/CatchZeng/dingtalk/blob/master/READMEEN.md)
+[English](https://github.com/ystar2020/dingtalk/blob/master/READMEEN.md)
 
 > DingTalk(dingding) 是钉钉机器人的 go 实现。支持 `Docker`、`Jenkinsfile`、`命令行`模式，`module` 模式，支持`加签`安全设置，支持`链式语法`创建消息，支持`文本、链接、Markdown、ActionCard、FeedCard` 消息类型
 
@@ -10,13 +10,13 @@
 
 ## 特性
 
-- [x] 支持[Docker](https://github.com/CatchZeng/dingtalk#Docker)
+- [x] 支持[Docker](https://github.com/ystar2020/dingtalk#Docker)
 
-- [x] 支持[Jenkinsfile](https://github.com/CatchZeng/dingtalk#Jenkinsfile)
+- [x] 支持[Jenkinsfile](https://github.com/ystar2020/dingtalk#Jenkinsfile)
 
-- [x] 支持[module](https://github.com/CatchZeng/dingtalk#%E4%BD%9C%E4%B8%BA-module)
+- [x] 支持[module](https://github.com/ystar2020/dingtalk#%E4%BD%9C%E4%B8%BA-module)
 
-- [x] 支持[命令行模式](https://github.com/CatchZeng/dingtalk#%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7)
+- [x] 支持[命令行模式](https://github.com/ystar2020/dingtalk#%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7)
 
 - [x] 支持加签
 
@@ -49,17 +49,17 @@
 ## Docker 安装
 
 ```shell
-docker pull catchzeng/dingtalk
+docker pull ystar2020/dingtalk
 ```
 
 ### 二进制安装
 
-到 [releases](https://github.com/CatchZeng/dingtalk/releases/) 下载相应平台的二进制可执行文件，然后加入到 PATH 环境变量即可。
+到 [releases](https://github.com/ystar2020/dingtalk/releases/) 下载相应平台的二进制可执行文件，然后加入到 PATH 环境变量即可。
 
 ### go get 安装
 
 ```shell
-go get github.com/CatchZeng/dingtalk
+go get github.com/ystar2020/dingtalk
 ```
 
 ## 使用方法
@@ -67,7 +67,7 @@ go get github.com/CatchZeng/dingtalk
 ### Docker
 
 ```shell
-docker run catchzeng/dingtalk dingtalk text -t 1c53e149ba5de6597cxxxxxx0e901fdxxxxxx80b8ac141e4a75afdc44c85ca4f -s SECb90923e19e58b466481e9e7b7a5bxxxxxx4531axxxxxxad3967fb29f0eae5c68 -c "docker test"
+docker run ystar2020/dingtalk dingtalk text -t 1c53e149ba5de6597cxxxxxx0e901fdxxxxxx80b8ac141e4a75afdc44c85ca4f -s SECb90923e19e58b466481e9e7b7a5bxxxxxx4531axxxxxxad3967fb29f0eae5c68 -c "docker test"
 ```
 
 ### Jenkinsfile
@@ -76,7 +76,7 @@ docker run catchzeng/dingtalk dingtalk text -t 1c53e149ba5de6597cxxxxxx0e901fdxx
 pipeline {
     agent {
         docker {
-            image 'catchzeng/dingtalk:latest'
+            image 'ystar2020/dingtalk:latest'
         }
     }
     environment {
@@ -101,8 +101,8 @@ package main
 import (
     "log"
 
-    "github.com/CatchZeng/dingtalk/client"
-    "github.com/CatchZeng/dingtalk/message"
+    "github.com/ystar2020/dingtalk/client"
+    "github.com/ystar2020/dingtalk/message"
 )
 
 func main() {

@@ -3,7 +3,7 @@ package cmd
 import (
 	"log"
 
-	"github.com/CatchZeng/dingtalk/version"
+	"github.com/ystar2020/dingtalk/version"
 	"github.com/spf13/cobra"
 )
 

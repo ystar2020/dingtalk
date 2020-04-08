@@ -1,6 +1,6 @@
 # dingtalk
 
-[中文](https://github.com/CatchZeng/dingtalk/blob/master/README.md)
+[中文](https://github.com/ystar2020/dingtalk/blob/master/README.md)
 
 > DingTalk (dingding) is the go implementation of the DingTalk robot. Support `Docker`, `Jenkinsfile`,`command line` mode, `module` mode, `signature security` settings, `chain syntax` to create messages, support `text, link, markdown、ActionCard、FeedCard` message types.
 
@@ -10,13 +10,13 @@
 
 ## Feature
 
-- [x] Support [Docker](https://github.com/CatchZeng/dingtalk#Docker)
+- [x] Support [Docker](https://github.com/ystar2020/dingtalk#Docker)
 
-- [x] Support [Jenkinsfile](https://github.com/CatchZeng/dingtalk#Jenkinsfile)
+- [x] Support [Jenkinsfile](https://github.com/ystar2020/dingtalk#Jenkinsfile)
 
-- [x] Support [module](https://github.com/CatchZeng/dingtalk/blob/master/READMEEN.md#use-as-module)
+- [x] Support [module](https://github.com/ystar2020/dingtalk/blob/master/READMEEN.md#use-as-module)
 
-- [x] Support [Command Line Mode](https://github.com/CatchZeng/dingtalk/blob/master/READMEEN.md#use-as-command-line-tool)
+- [x] Support [Command Line Mode](https://github.com/ystar2020/dingtalk/blob/master/READMEEN.md#use-as-command-line-tool)
 
 - [x] Support sign
 
@@ -49,17 +49,17 @@
 ## with Docker
 
 ```shell
-docker pull catchzeng/dingtalk
+docker pull ystar2020/dingtalk
 ```
 
 ### binary
 
-Go to [releases](https://github.com/CatchZeng/dingtalk/releases/) to download the binary executable file of the corresponding platform, and then add it to the PATH environment variable.
+Go to [releases](https://github.com/ystar2020/dingtalk/releases/) to download the binary executable file of the corresponding platform, and then add it to the PATH environment variable.
 
 ### with go get
 
 ```shell
-go get github.com/CatchZeng/dingtalk
+go get github.com/ystar2020/dingtalk
 ```
 
 ## Usage
@@ -67,7 +67,7 @@ go get github.com/CatchZeng/dingtalk
 ### Docker
 
 ```shell
-docker run catchzeng/dingtalk dingtalk text -t 1c53e149ba5de6597cxxxxxx0e901fdxxxxxx80b8ac141e4a75afdc44c85ca4f -s SECb90923e19e58b466481e9e7b7a5bxxxxxx4531axxxxxxad3967fb29f0eae5c68 -c "docker test"
+docker run ystar2020/dingtalk dingtalk text -t 1c53e149ba5de6597cxxxxxx0e901fdxxxxxx80b8ac141e4a75afdc44c85ca4f -s SECb90923e19e58b466481e9e7b7a5bxxxxxx4531axxxxxxad3967fb29f0eae5c68 -c "docker test"
 ```
 
 ### Jenkinsfile
@@ -76,7 +76,7 @@ docker run catchzeng/dingtalk dingtalk text -t 1c53e149ba5de6597cxxxxxx0e901fdxx
 pipeline {
     agent {
         docker {
-            image 'catchzeng/dingtalk:latest'
+            image 'ystar2020/dingtalk:latest'
         }
     }
     environment {
@@ -101,8 +101,8 @@ package main
 import (
     "log"
 
-    "github.com/CatchZeng/dingtalk/client"
-    "github.com/CatchZeng/dingtalk/message"
+    "github.com/ystar2020/dingtalk/client"
+    "github.com/ystar2020/dingtalk/message"
 )
 
 func main() {
